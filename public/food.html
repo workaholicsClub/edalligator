@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/extensions.css">
+    <link rel="stylesheet" href="/assets/sidebar.css">
+    <link rel="stylesheet" href="/assets/tagsinput.css">
+    <title>Едаллигатор: еда</title>
+</head>
+<body>
+
+<div class="sidenav">
+    <a href="/index.html" title="Главная"><i class="material-icons">home</i></a>
+    <a href="/food.html" title="Каталог товаров" class="active"><i class="material-icons">kitchen</i></a>
+    <a href="/suppliers.html" title="Каталог поставщиков"><i class="material-icons">apps</i></a>
+    <a href="#" title="Корзина"><i class="material-icons">shopping_cart</i></a>
+    <a href="#" title="На карте"><i class="material-icons">place</i></a>
+</div>
+
+<div id="main">
+    <h1 class="display-4">Перекус для офисных работников</h1>
+    <form>
+        <div class="row">
+            <div class="form-group col">
+                <label for="cuisine">Кухня</label>
+                <select class="form-control" id="cuisine">
+                    <option>Не задано</option>
+                    <option>Русская</option>
+                    <option>Европейская</option>
+                    <option>Азиатская</option>
+                    <option>Американская</option>
+                    <option>Грузинская</option>
+                </select>
+            </div>
+            <div class="form-group col">
+                <label for="type">Тип</label>
+                <select class="form-control" id="type">
+                    <option>Не задано</option>
+                    <option>Салат</option>
+                    <option>Горячее блюдо</option>
+                    <option>Десерт</option>
+                    <option>Банкет</option>
+                    <option>Закуска</option>
+                    <option>Гарнир</option>
+                </select>
+            </div>
+            <div class="form-group col">
+                <label for="size">Размер порции</label>
+                <select class="form-control" id="size">
+                    <option>Не задано</option>
+                    <option>Небольшая (< 200г)</option>
+                    <option>Средняя (200-300г)</option>
+                    <option>Большая (300-500г)</option>
+                    <option>Очень большая (>500г)</option>
+                </select>
+            </div>
+        </div>
+        <div class="row pt-2">
+            <div class="col">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="check10">
+                    <label class="form-check-label" for="check10">
+                        Только разогреть
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="check11">
+                    <label class="form-check-label" for="check11">
+                        Полуфабрикаты
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="check12">
+                    <label class="form-check-label" for="check12">
+                        Наборы для готовки
+                    </label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="check2">
+                    <label class="form-check-label" for="check2">
+                        Кошерное
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="check3">
+                    <label class="form-check-label" for="check3">
+                        Халяльное
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-2">
+            <div class="form-group col">
+                <label for="tags">Ингредиенты</label>
+                <select multiple data-role="tagsinput" id="tags">
+                    <option value="Говядина">Говядина</option>
+                    <option value="Баранина">Баранина</option>
+                    <option value="Свинина">Свинина</option>
+                    <option value="Овощи">Овощи</option>
+                    <option value="Фрукты">Фрукты</option>
+                </select>
+            </div>
+        </div>
+        <div class="row pt-2">
+            <div class="col text-right">
+                <button type="submit" class="btn btn-primary btn-lg">Уточнить рекомендации</button>
+            </div>
+        </div>
+    </form>
+
+    <h2 class="display-4 pt-4">Наши рекомендации</h2>
+
+    <div class="card-deck">
+        <div class="card">
+            <img class="card-img-top" src="https://loremflickr.com/348/180/food?random=1" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Свиная рулька с хрустящей корочкой</h5>
+                <p class="card-text">Приготовленная по фирменному рецепту, подается с гарниром из квашеной капусты, картофельным пюре и горчицей</p>
+                <p class="card-text"><small class="text-muted">600/200/200/10/3/20/2/30</small></p>
+            </div>
+            <a href="#" class="btn btn-primary align-middle"><i class="material-icons">add_shopping_cart</i><span>500 руб</span></a>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="https://loremflickr.com/348/180/food?random=2" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Картофельный салат</h5>
+                <p class="card-text">Ветчина, маринованные огурчики, картофель, заправленный майонезом, с рулетиком из сыра и ветчины, томатом черри и зеленью</p>
+                <p class="card-text"><small class="text-muted">220/2</small></p>
+            </div>
+            <a href="#" class="btn btn-primary align-middle"><i class="material-icons">add_shopping_cart</i><span>200 руб</span></a>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="https://loremflickr.com/348/180/food?random=3" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Клубничный мусс</h5>
+                <p class="card-text">TС кусочками мармелада и профитролем с заварным кремом</p>
+                <p class="card-text"><small class="text-muted">176/2/1/2</small></p>
+            </div>
+            <a href="#" class="btn btn-primary align-middle"><i class="material-icons">add_shopping_cart</i><span>150 руб</span></a>
+        </div>
+
+        <div class="card">
+            <img class="card-img-top" src="https://loremflickr.com/348/180/food?random=4" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Капуста красная</h5>
+                <p class="card-text">Тушеная с красным вином и можжевеловыми ягодами</p>
+                <p class="card-text"><small class="text-muted">200/2</small></p>
+            </div>
+            <a href="#" class="btn btn-primary align-middle"><i class="material-icons">add_shopping_cart</i><span>70 руб</span></a>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="https://loremflickr.com/348/180/food?random=5" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Овощи гриль</h5>
+                <p class="card-text">Кукуруза, цуккини, баклажан, перец болгарский, лук, помидоры черри, обжаренные на гриле</p>
+                <p class="card-text"><small class="text-muted">200/10</small></p>
+            </div>
+            <a href="#" class="btn btn-primary align-middle"><i class="material-icons">add_shopping_cart</i><span>250 руб</span></a>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="https://loremflickr.com/348/180/food?random=6" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Вырезка говядины на гриле</h5>
+                <p class="card-text">С соусом порто на блинчике с булгуром и белыми грибами</p>
+                <p class="card-text"><small class="text-muted">120/150/30/40/20/2</small></p>
+            </div>
+            <a href="#" class="btn btn-primary align-middle"><i class="material-icons">add_shopping_cart</i><span>650 руб</span></a>
+        </div>
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="/assets/tagsinput.js"></script>
+</body>
+</html>
